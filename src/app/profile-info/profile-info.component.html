@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="profile-pic-container">
+    <div class="profile-pic-wrap">
+      <img
+        class="profile-pic"
+        [src]="person.profilePicUrl"
+        alt="{{person.name}} smiling">
+    </div>
+  </div>
+
+  <h2>My Profile</h2>
+  <h3>Name</h3>
+  <p>{{person.name}}</p>
+  <h3>Age</h3>
+  <p>{{person.age}}</p>
+  <h3>Bio</h3>
+  <p>{{person.bio}}</p>
+  <h3>Birthday</h3>
+  <p>{{person.birthday}}</p>
+  <h3>Interests</h3>
+  <ul *ngFor="let intrst of person.interests">
+    <li>{{intrst}}</li>
+  </ul>
+</div>
+

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Person} from '../types';
+import {friendsData, myProfileData} from './data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'FriendTracker';
+  myProfileData: Person = myProfileData;
+  friendsData: Person[] = friendsData;
 }
