@@ -10,4 +10,8 @@ import {friendsData, myProfileData} from './data';
 export class AppComponent {
   myProfileData: Person = myProfileData;
   friendsData: Person[] = friendsData;
+
+  onPersonClicked(person: Person) {
+    alert(`${person.name} likes ${person.interests.join(', ')}`)
+  }
 }
